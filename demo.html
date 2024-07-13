@@ -1,122 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Basic reset for padding and margin */
-        body, ul, li {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Styling for the header and navigation */
-        header {
-            background-color: #f8f8f8;
-            padding: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        nav li {
-            opacity: 0;
-            animation: fadeIn 1s ease-in forwards;
-        }
-
-        nav li:nth-child(1) { animation-delay: 0.2s; }
-        nav li:nth-child(2) { animation-delay: 0.4s; }
-        nav li:nth-child(3) { animation-delay: 0.6s; }
-        nav li:nth-child(4) { animation-delay: 0.8s; }
-        nav li:nth-child(5) { animation-delay: 1s; }
-        nav li:nth-child(6) { animation-delay: 1.2s; }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-        }
-
-        nav a:hover {
-            color: #007BFF;
-        }
-
-        /* Keyframes for the fade-in animation */
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Styling for the main section */
-        main {
-            padding: 20px;
-        }
-
-        section {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideIn 1s ease-out forwards;
-            animation-delay: 1.4s; /* Adjusted delay for smoother transition */
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin: 10px 0;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Keyframes for the slide-in animation */
-        @keyframes slideIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    <title>Online Teaching Solution</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Example</title>
+  <link rel="stylesheet" href="/css/demo.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+    })();
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#downloads">Downloads</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#questions">Questions</a></li>
-                <li><a href="#helping">Helping</a></li>
-                <li><a href="#cookies">Free Cookies</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Complete Online Teaching Solution</h1>
-            <p>For Institutes, Teachers, and Students</p>
-            <p>Download Previous Papers and Mock Tests</p>
-            <button>Start Your Online Coaching Center</button>
-        </section>
-    </main>
+  <!-- Existing links -->
+  <a href="#" data-pdf="pdf1.pdf">Link 1</a>
+  <a href="#" data-pdf="pdf2.pdf">Link 2</a>
+  <a href="#" data-pdf="pdf3.pdf">Link 3</a>
+
+
+
+  <!-- Popup form -->
+  <div id="popupContainer" class="popup-container hide-popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-btn">×</span>
+      <h2>Register</h2>
+      <h3>Send us a message 🚀</h3>
+      <form id="contact-form">
+        <label for="name">Full name*</label>
+        <input id="name" type="text" name="name" required>
+        <label for="email">Email address*</label>
+        <input id="email" type="email" name="email" required>
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject">
+        <label for="message">Tell us more about your project*</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+
+    <!-- New card element -->
+    <div class="card">
+      <div class="header">
+        <span class="title">Machine Learning</span>
+      </div>
+      <div class="subMenu">
+        <a href="#" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
+        <a href="#" data-pdf="item-2.pdf">item-2</a>
+        <a href="#" data-pdf="item-3.pdf">item-3</a>
+      </div>
+    </div>
+  <script src="/js/demo.js"></script>
 </body>
 </html>

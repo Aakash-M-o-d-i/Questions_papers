@@ -95,6 +95,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Paper</title>
     <link rel="stylesheet" href="/css/style.css">
+    <!-- For register -->
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+      })();
+    </script>
+
+    <!-- end -->
+
 </head>
 <body>
     <header>
@@ -121,7 +132,6 @@
             <p style="color: rgb(255, 255, 255);font-weight: 1000;">Complete Online Teaching Solution for Institutes, Teachers and Students. Download Previous Papers and Mock Tests.</p>
         </div>
     </div>
-
 
     <section id="services" class="services-section">
         <div class="container">
@@ -172,8 +182,9 @@
                             <span class="title">Introduction to AI</span></div>
 
                             <div class="subMenu">
-                                <a href="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
-                                <a href="">item-2</a>
+                                <!-- <a href="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a> -->
+                                 <a href="#" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">Link 1</a>
+                                <a href="#" class="trigger-link" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">Link 1</a>
                                 <a href="">item-3</a>
                             </div>
                         </div>
@@ -184,7 +195,7 @@
                         
                             <div class="subMenu">
                                 <a href="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
-                                <a href="">item-2</a>
+                                <a href="#" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">item-2</a>
                                 <a href="">item-3</a>
                             </div>
                         </div>
@@ -234,7 +245,7 @@
                             <span class="title">Physical Chemistry</span></div>
                         
                             <div class="subMenu">
-                                <a href="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
+                                <a href="#" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
                                 <a href="">item-2</a>
                                 <a href="">item-3</a>
                             </div>
@@ -252,7 +263,7 @@
                             <span class="title">Plant Physiology</span></div>
                         
                             <div class="subMenu">
-                                <a href="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
+                                <a href="#" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
                                 <a href="">item-2</a>
                                 <a href="">item-3</a>
                             </div>
@@ -285,7 +296,27 @@
         </div>
     </section>
 
-    
+
+     <!-- Popup form / register form-->
+  <div id="popupContainer" class="popup-container hide-popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-btn">×</span>
+      <h2>Register</h2>
+      <h3>Send us a message 🚀</h3>
+      <form id="contact-form">
+        <label for="name">Full name*</label>
+        <input id="name" type="text" name="name" required>
+        <label for="email">Email address*</label>
+        <input id="email" type="email" name="email" required>
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject">
+        <label for="message">Tell us more about your project*</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+
 
     <footer>
         <!-- <div class="container">
@@ -443,7 +474,10 @@
     </footer>
 
 
-    
+
+  <script src="/js/script.js"></script>
+
+
     
 </body>
 </html>
