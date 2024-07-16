@@ -1,57 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popup Example</title>
-  <link rel="stylesheet" href="/css/demo.css">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
-    })();
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="/css/demo.css">
 </head>
 <body>
-  <!-- Existing links -->
-  <a href="#" data-pdf="pdf1.pdf">Link 1</a>
-  <a href="#" data-pdf="pdf2.pdf">Link 2</a>
-  <a href="#" data-pdf="pdf3.pdf">Link 3</a>
-
-
-
-  <!-- Popup form -->
-  <div id="popupContainer" class="popup-container hide-popup">
-    <div class="popup-content">
-      <span class="close-btn" id="close-btn">×</span>
-      <h2>Register</h2>
-      <h3>Send us a message 🚀</h3>
-      <form id="contact-form">
-        <label for="name">Full name*</label>
-        <input id="name" type="text" name="name" required>
-        <label for="email">Email address*</label>
-        <input id="email" type="email" name="email" required>
-        <label for="subject">Subject</label>
-        <input id="subject" type="text" name="subject">
-        <label for="message">Tell us more about your project*</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send message</button>
-      </form>
-    </div>
-  </div>
-
-    <!-- New card element -->
-    <div class="card">
-      <div class="header">
-        <span class="title">Machine Learning</span>
-      </div>
-      <div class="subMenu">
-        <a href="#" data-pdf="/questions_papers/01-MTS-01-09-2023-Morning-Shift.pdf">1st mid-term questions paper</a>
-        <a href="#" data-pdf="item-2.pdf">item-2</a>
-        <a href="#" data-pdf="item-3.pdf">item-3</a>
-      </div>
-    </div>
-  <script src="/js/demo.js"></script>
+    <ul class="menu"></ul>
+        <li class="list"><a href="#">List 4</a> 
+            <ul class="items">
+            <li> <a href="#" > Item 4-1 </a></li>
+            <li> <a href="#" > Item 4-2 </a></li>
+            <li class="list"><a href="#">List 4-1</a> 
+                <ul  class="items">
+                    <li> <a href="#" > Item 4-1-1</a></li>
+                    <li> <a href="#" > Item 4-1-2</a></li>
+                    <li class="list"><a href="#">List 4-2</a> 
+                        <ul  class="items">
+                        <li> <a href="#" > Item 4-2-1</a></li>
+                        <li> <a href="#" > Item 4-2-2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
