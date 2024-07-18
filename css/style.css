@@ -216,7 +216,7 @@ footer {
     
   .card:hover {
     height: 350px;  /* This will change height of links */
-    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    background: linear-gradient(360deg, #edededc5 35%, hsla(0, 0%, 13%, 1) 70%);
   }
   
   
@@ -229,14 +229,22 @@ footer {
     background: #212121;
     margin-bottom: 16px;
   }
-  
-  .card .header .img-box {
+  .card:first-child {
+    margin-bottom: 20px; /* Adds extra space after the first course */
+ }
+
+ /* Create extra space */
+ .card:nth-child(-n+3) {
+  margin-bottom: 20px; /* Adds extra space after the first course */
+}
+
+.card .header .img-box {
     width: 50px;
   }
   
   .card .header .title {
     font-size: 1em;
-    letter-spacing: .1em;
+    /* letter-spacing: .1em; */
     font-weight: 900;
     text-transform: uppercase;
     padding: 4px 0 34px 0;
@@ -281,6 +289,32 @@ footer {
 
   /* Previous Year Questions Papers */
 
+  /* this section for submenu uder the sub-menu */
+  /* .subMenu .sub-Menu a{ */
+    /* display: grid; just changed */
+    /* padding: 15px 55px;
+    color: #fff; */
+    /* color: #212121; */
+    /* font-size: 14px;
+    border-bottom: 1px solid #394c7f;
+    position: relative;
+    background-color: rgb(111, 237, 100);   
+    text-align: left; */
+
+    /* font-weight: 900; */
+    /* text-transform: uppercase; /* optional */
+    
+/* }  */
+
+/* .subMenu .sub-Menu a:hover{
+  background: #204e35;
+  background: -moz-linear-gradient(top, #204e35 0%, #204e35 50%, #daa04a 51%, #daa04a 100%);
+  background: -webkit-linear-gradient(top, #204e35 0%,#3892a8 50%,#daa04a 51%,#daa04a 100%);
+  background: linear-gradient(to bottom, #204e35 0%,#204e35 50%,#daa04a 51%,#daa04a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#204e35', endColorstr='#394c7f',GradientType=0 );
+  transition: all 0.3s;
+  border-bottom: 1px solid #394c7f;
+} */
 
   .subMenu a{
     display: grid; /* just changed */
@@ -351,36 +385,6 @@ footer {
 }
 
 /* for displaying image */
-
-/* .hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    filter: brightness(0.7);
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.hero-text h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero-text p {
-    font-size: 1.2em;
-} */
-
 
 .hero {
   position: relative;
