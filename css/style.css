@@ -42,7 +42,8 @@ nav {
   align-items: center;
   padding: 20px;
   box-shadow: 0 10px 55px rgba(7, 7, 7, 0.1);
-  width: 46%;
+  /* width: 46%; */
+  width: 65%;
   margin: 20px auto;
   border-radius: 20px;
   overflow: hidden;
@@ -534,6 +535,22 @@ body {
   }
 
 
+  /*  */
+
+          /* Styles for smaller screens */
+          @media (max-width: 600px) {
+            .content {
+                text-align: center;
+                padding: 10px;
+            }
+            .content div {
+                text-align: center;
+            }
+            .content p {
+                text-align: center;
+            }
+        }
+
 
   /* register page */
   
@@ -693,4 +710,90 @@ body {
   }
 }
 
+
+
+/* CONTACT PAGE */
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px; /* Adjusted max-width for better centering */
+  margin: auto; /* Center the container */
+
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  font-weight: 1100;
+}
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-weight: 900;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 600px) {
+  .contact-container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .contact-info, .contact-form {
+      width: 48%;
+  }
+}
 

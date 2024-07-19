@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+      })();
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/images/main_logo.png" alt="Question Paper Logo">
+            </div>
+            <h1> Knowledge or Learning</h1>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/index.html#about">About</a>
+                <a href="/index.html#services">Services</a>
+                <a href="/index.html#courses">Courses</a>
+                <a href="/html/contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+       
+        #loadingBar {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 20px;
+            background: lightgrey;
+            z-index: 9999;
+        }
+
+        #progress {
+            width: 0%;
+            height: 100%;
+            background: green;
+        }
+
+        @media (max-width: 600px) {
+            .page-container {
+                padding: 10px;
+            }
+
+            .contact-container {
+                max-width: 100%;
+            }
+        }
+        
+
+    </style>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Let's chat.</h2>
+            <p>If you have any questions or would like to inquire about our services, please contact us at: ✌️</p>
+            <p>Email: <a href="mailto:work.aakash.modi@gmail.com">work.aakash.modi@gmail.com</a></p>
+            <p>Phone: +91 7811950838</p>
+            <p>OR</p>
+            <p>Fill this form, so we will reach you!</p>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form">
+                <label for="name">Full name*</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email address*</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+                
+                <label for="message">Tell us, what do you want to change or add this site?</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send message</button>
+            </form>
+            <div id="loadingBar" style="display:none;">
+                <div id="progress" style="width: 0%; height: 100%; background: green;"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/contact.js"></script>
+</body>
+</html>
