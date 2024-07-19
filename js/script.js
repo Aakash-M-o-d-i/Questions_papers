@@ -1,127 +1,6 @@
 
-// // Get the modal
-// var modal = document.getElementById("popupContainer");
 
-// // Get the <span> element that closes the modal
-// var span = document.getElementById("close-btn");
-
-// // Get all links
-// var links = document.querySelectorAll('a');
-
-// // Variable to store the current PDF URL
-// var currentPdfUrl = "";
-
-// // When the user clicks on any link, open the modal and set the current PDF URL
-// links.forEach(link => {
-//     link.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         modal.style.display = "flex"; // Show the modal
-//         currentPdfUrl = this.getAttribute('data-pdf'); // Set the current PDF URL
-//     });
-// });
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//     modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
-
-// // Handle form submission
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     const templateParams = {
-//         name: document.getElementById('name').value,
-//         email: document.getElementById('email').value,
-//         subject: document.getElementById('subject').value,
-//         message: document.getElementById('message').value
-//     };
-
-//     emailjs.send('service_v87ru0n', 'template_4x24gft', templateParams)
-//         .then(function(response) {
-//             console.log('SUCCESS!', response.status, response.text);
-//             alert('Message sent successfully!');
-//             document.getElementById('contact-form').reset();
-
-//             // After registration and email success, close the modal and trigger the PDF download
-//             modal.style.display = "none";
-//             window.location.href = currentPdfUrl;
-//         }, function(error) {
-//             console.log('FAILED...', error);
-//             alert('Failed to send message. Please try again.');
-//         });
-// });
-
-
-
-// Get the modal
-// var modal = document.getElementById("popupContainer");
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementById("close-btn");
-
-// // Get all links with the class 'pdf-link'
-// var links = document.querySelectorAll('.pdf-link');
-
-// // Variable to store the current PDF URL
-// var currentPdfUrl = "";
-
-// // When the user clicks on any link, open the modal and set the current PDF URL
-// links.forEach(link => {
-//     link.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         modal.style.display = "flex"; // Show the modal
-//         currentPdfUrl = this.getAttribute('data-pdf'); // Set the current PDF URL
-//     });
-// });
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//     modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
-
-// // Handle form submission
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     const templateParams = {
-//         name: document.getElementById('name').value,
-//         department: document.getElementById('department').value,
-//         semester: document.getElementById('semester').value,
-//         email: document.getElementById('email').value,
-//         phone: document.getElementById('phone').value,
-
-//         // subject: document.getElementById('subject').value,
-//         // message: document.getElementById('message').value
-//     };
-
-//     emailjs.send('service_v87ru0n', 'template_4x24gft', templateParams)
-//         .then(function(response) {
-//             console.log('SUCCESS!', response.status, response.text);
-//             alert('Message sent successfully!');
-//             document.getElementById('contact-form').reset();
-
-//             // After registration and email success, close the modal and trigger the PDF download
-//             modal.style.display = "none";
-//             window.location.href = currentPdfUrl;
-//         }, function(error) {
-//             console.log('FAILED...', error);
-//             alert('Failed to send message. Please try again.');
-//         });
-// });
+// // Time : 1.28s
 
 // Cache DOM elements
 var modal = document.getElementById("popupContainer");
@@ -132,6 +11,8 @@ var departmentInput = document.getElementById('department');
 var semesterInput = document.getElementById('semester');
 var emailInput = document.getElementById('email');
 var phoneInput = document.getElementById('phone');
+var loadingBar = document.getElementById('loadingBar');
+var progress = document.getElementById('progress');
 
 // Variable to store the current PDF URL
 var currentPdfUrl = "";
@@ -165,6 +46,10 @@ document.addEventListener('click', function(event) {
 contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // Show loading bar and reset progress
+    loadingBar.style.display = "block";
+    progress.style.width = "0%";
+
     const templateParams = {
         name: nameInput.value,
         department: departmentInput.value,
@@ -172,6 +57,14 @@ contactForm.addEventListener('submit', function(event) {
         email: emailInput.value,
         phone: phoneInput.value,
     };
+
+    // Simulate progress (optional)
+    let progressInterval = setInterval(() => {
+        let currentWidth = parseInt(progress.style.width);
+        if (currentWidth < 100) {
+            progress.style.width = (currentWidth + 10) + '%'; // Increase width
+        }
+    }, 100); // Adjust interval timing as needed
 
     emailjs.send('service_v87ru0n', 'template_4x24gft', templateParams)
         .then(function(response) {
@@ -182,8 +75,16 @@ contactForm.addEventListener('submit', function(event) {
             // After registration and email success, close the modal and trigger the PDF download
             modal.style.display = "none";
             window.location.href = currentPdfUrl;
+
+            // Hide loading bar and clear interval
+            clearInterval(progressInterval);
+            loadingBar.style.display = "none";
         }, function(error) {
             console.log('FAILED...', error);
             alert('Failed to send message. Please try again.');
+
+            // Hide loading bar and clear interval
+            clearInterval(progressInterval);
+            loadingBar.style.display = "none";
         });
 });

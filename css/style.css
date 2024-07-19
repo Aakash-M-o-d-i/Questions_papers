@@ -662,6 +662,35 @@ body {
 
 
 
-/*  */
+/* loading bar */
+
+#loadingBar {
+  width: 50%; /* Adjust width as needed */
+  max-width: 400px; /* Maximum width for larger screens */
+  height: 20px; /* Adjust height as needed */
+  background: lightgray;
+  position: absolute; /* Change to absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  display: none; /* Initially hidden */
+  border-radius: 70px;
+}
+
+#progress {
+  height: 100%;
+  background: green; /* Color of the progress */
+  transition: width 0.5s; /* Smooth transition */
+  border-radius: 70px;
+
+}
+
+@media (max-width: 600px) {
+  #loadingBar {
+      width: 70%; /* Wider on smaller screens */
+      border-radius: 70px; /* Adjust border radius for smaller screens */
+  }
+}
 
 
