@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: #121d55; */
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/quizBG.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* For tablets (width between 600px and 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+    body {
+        background-size: contain; /* Adjust to fit within the container */
+        background-position: top center; /* Align the image differently if needed */
+    }
+}
+
+/* For mobile devices (width below 600px) */
+@media (max-width: 599px) {
+    body {
+        background-size: contain; /* Make sure the image fits within the screen */
+        background-position: top center; /* Position the image as needed */
+    }
+}
+
+.container {
+    width: 850px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #b8b8b849;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: x-large ;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #3071a9;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.options label {
+    display: block;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: larger;
+
+}
+
+.options input {
+    display: none;
+}
+
+.options label:hover {
+    background-color: #89e78e;
+}
+
+.options input:checked + label {
+    background-color: #c8e6c9;
+}
+
+button {
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #2adf33;
+}
+
+.correct {
+    background-color: #c8e6c9 !important;
+    border-color: #388e3c !important;
+}
+
+.incorrect {
+    background-color: #ffcdd2 !important;
+    border-color: #d32f2f !important;
+}
+
+
