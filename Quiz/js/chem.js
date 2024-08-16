@@ -1,71 +1,106 @@
-
 const quizData = [
-    {
-      question: 'What is the capital of France?',
-      options: ['Paris', 'London', 'Berlin', 'Madrid'],
-      answer: 'Paris',
-    },
-    {
-      question: 'What is the largest planet in our solar system?',
-      options: ['Mars', 'Saturn', 'Jupiter', 'Neptune'],
-      answer: 'Jupiter',
-    },
-    {
-      question: 'Which country won the FIFA World Cup in 2018?',
-      options: ['Brazil', 'Germany', 'France', 'Argentina'],
-      answer: 'France',
-    },
-    {
-      question: 'What is the tallest mountain in the world?',
-      options: ['Mount Everest', 'K2', 'Kangchenjunga', 'Makalu'],
-      answer: 'Mount Everest',
-    },
-    {
-      question: 'Which is the largest ocean on Earth?',
+  {
+      question: 'What is the primary cause of the spectral lines in the hydrogen atomic spectrum?',
       options: [
-        'Pacific Ocean',
-        'Indian Ocean',
-        'Atlantic Ocean',
-        'Arctic Ocean',
+          'Transitions between energy levels',
+          'Thermal vibration of atoms',
+          'Nuclear reactions',
+          'Interaction with magnetic fields'
       ],
-      answer: 'Pacific Ocean',
-    },
-    {
-      question: 'What is the chemical symbol for gold?',
-      options: ['Au', 'Ag', 'Cu', 'Fe'],
-      answer: 'Au',
-    },
-    {
-      question: 'Who painted the Mona Lisa?',
+      answer: 'Transitions between energy levels',
+  },
+  {
+      question: 'The square of the wave function represents the:',
       options: [
-        'Pablo Picasso',
-        'Vincent van Gogh',
-        'Leonardo da Vinci',
-        'Michelangelo',
+          'Energy of the particle',
+          'Momentum of the particle',
+          'Probability density',
+          'Wavelength of the particle'
       ],
-      answer: 'Leonardo da Vinci',
-    },
-    {
-      question: 'Which planet is known as the Red Planet?',
-      options: ['Mars', 'Venus', 'Mercury', 'Uranus'],
-      answer: 'Mars',
-    },
-    {
-      question: 'What is the largest species of shark?',
+      answer: 'Probability density',
+  },
+  {
+      question: 'On which quantum numbers does the radial wave function rely?',
       options: [
-        'Great White Shark',
-        'Whale Shark',
-        'Tiger Shark',
-        'Hammerhead Shark',
+          'Principal quantum number',
+          'Azimuthal quantum number',
+          'Magnetic quantum number',
+          'Spin quantum number'
       ],
-      answer: 'Whale Shark',
-    },
-    {
-      question: 'Which animal is known as the King of the Jungle?',
-      options: ['Lion', 'Tiger', 'Elephant', 'Giraffe'],
-      answer: 'Lion',
-    },
-  ];
+      answer: 'Principal quantum number',
+  },
+  {
+      question: 'Slater\'s rules are used for calculating:',
+      options: [
+          'Electronegativity',
+          'Effective nuclear charge',
+          'Bond energy',
+          'Ionization energy'
+      ],
+      answer: 'Effective nuclear charge',
+  },
+  {
+      question: 'What is the hybridization of carbon in CO₂?',
+      options: [
+          'sp',
+          'sp²',
+          'sp³',
+          'dsp²'
+      ],
+      answer: 'sp',
+  },
+  {
+      question: 'What is the difference in bonding between Na and NaCl?',
+      options: [
+          'Ionic bonding in NaCl and covalent bonding in Na',
+          'Metallic bonding in Na and ionic bonding in NaCl',
+          'Covalent bonding in both',
+          'Metallic bonding in NaCl and ionic bonding in Na'
+      ],
+      answer: 'Metallic bonding in Na and ionic bonding in NaCl',
+  },
+  {
+      question: 'Which of the following is an example of lattice energy?',
+      options: [
+          'Energy released during bond formation',
+          'Energy required to convert a gas into a solid',
+          'Energy required to break ionic bonds in a crystal lattice',
+          'Energy absorbed by an electron during excitation'
+      ],
+      answer: 'Energy required to break ionic bonds in a crystal lattice',
+  },
+  {
+      question: 'The structure of PCl₅ is:',
+      options: [
+          'Tetrahedral',
+          'Trigonal bipyramidal',
+          'Square planar',
+          'Octahedral'
+      ],
+      answer: 'Trigonal bipyramidal',
+  },
+  {
+      question: 'What is shielding or screening effect?',
+      options: [
+          'Reduction in nuclear charge experienced by outer electrons',
+          'Increase in nuclear charge experienced by inner electrons',
+          'Interaction between nucleus and valence electrons',
+          'None of the above'
+      ],
+      answer: 'Reduction in nuclear charge experienced by outer electrons',
+  },
+  {
+      question: 'What is the correct relationship between de Broglie wavelength and momentum?',
+      options: [
+          'λ = h / p',
+          'λ = p / h',
+          'λ = h * p',
+          'λ = h² / p²'
+      ],
+      answer: 'λ = h / p',
+  }
+];
+
   
 
 const quizContainer = document.getElementById('quiz');

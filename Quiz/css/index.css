@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('/images/quiz-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* For tablets (width between 600px and 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+    body {
+        background-size: contain; /* Adjust to fit within the container */
+        background-position: top center; /* Align the image differently if needed */
+    }
+}
+
+/* For mobile devices (width below 600px) */
+@media (max-width: 599px) {
+    body {
+        background-size: contain; /* Make sure the image fits within the screen */
+        background-position: top center; /* Position the image as needed */
+    }
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    font-weight: 900;
+    font-size: x-large;
+    padding: 20px 177px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+    /* background-color: #e0e0e0; */
+    background-color: #89e78e;
+}
+
+.option-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+}
+
+
+/* image */

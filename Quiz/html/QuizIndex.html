@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Course</title>
+    <link rel="stylesheet" href="/Quiz/css/index.css">
+</head>
+<body>
+    <!-- <div class="options-container">
+        <button class="option" onclick="navigateTo('/Quiz/html/AI/ai.html')">Artificial Intelligence</button>
+        <button class="option" onclick="navigateTo('/Quiz/html/chemistry/chem.html')"> <img src="/Quiz/A-icons/chem.gif" alt="" srcset="">  Chemistry</button>
+        <button class="option" onclick="navigateTo('bba.html')">BBA</button>
+        <button class="option" onclick="navigateTo('botany.html')">Botany</button>
+        <button class="option" onclick="navigateTo('geology.html')">Geology</button>
+    </div> -->
+
+
+    <div class="options-container">
+        <button class="option" onclick="navigateTo('/Quiz/html/AI/ai.html')">
+            <div class="option-content">
+                <img src="/Quiz/html/AI/ai.html" alt="" srcset="">
+                <img src="/Quiz/A-icons/ai.gif" alt="Chemistry Icon" class="icon">
+                <span>Artificial Intelligence</span>
+            </div>
+        </button>
+
+        <button class="option" onclick="navigateTo('/Quiz/html/chemistry/chem.html')">
+            <div class="option-content">
+                <img src="/Quiz/A-icons/chem1.gif" alt="Chemistry Icon" class="icon">
+                <span>Chemistry</span>
+            </div>
+        </button>
+
+        <button class="option" onclick="navigateTo('/Quiz/html/bba/bba-quiz.html')">
+            <div class="option-content">
+                <img src="/Quiz/A-icons/management.gif" alt="Chemistry Icon" class="icon">
+                <span>BBA</span>
+            </div>
+        </button>
+
+        <button class="option" onclick="navigateTo('/Quiz/html/botany/botany-quiz.html')">
+            <div class="option-content">
+                <img src="/Quiz/A-icons/botany.gif" alt="Chemistry Icon" class="icon">
+                <span>Botany</span>
+            </div>
+        </button>
+
+        <button class="option" onclick="navigateTo('/Quiz/html/geology/geology.html')">
+            <div class="option-content">
+                <img src="/Quiz/A-icons/geology.gif" alt="Chemistry Icon" class="icon">
+                <span>Geology</span>
+            </div>
+        </button>
+        <img src="/Quiz/html/AI/" alt="" srcset="">
+        <!-- Add more buttons here with the same structure -->
+    </div>
+    <script >
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+    </script>
+</body>
+</html>
