@@ -1,105 +1,56 @@
 const quizData = [
     {
-        question: 'What is the primary cause of the spectral lines in the hydrogen atomic spectrum?',
-        options: [
-            'Transitions between energy levels',
-            'Thermal vibration of atoms',
-            'Nuclear reactions',
-            'Interaction with magnetic fields'
-        ],
-        answer: 'Transitions between energy levels',
+        question: 'From the given balance sheet, what is the increase in total assets from 31-Dec-18 to 31-Dec-19?',
+        options: ['1,40,000', '2,40,000', '1,00,000', '50,000'],
+        answer: '1,40,000',
     },
     {
-        question: 'The square of the wave function represents the:',
-        options: [
-            'Energy of the particle',
-            'Momentum of the particle',
-            'Probability density',
-            'Wavelength of the particle'
-        ],
-        answer: 'Probability density',
+        question: 'What is the Quick ratio from the given information?',
+        options: ['1.0', '1.5', '0.75', '2.0'],
+        answer: '0.75',
     },
     {
-        question: 'On which quantum numbers does the radial wave function rely?',
-        options: [
-            'Principal quantum number',
-            'Azimuthal quantum number',
-            'Magnetic quantum number',
-            'Spin quantum number'
-        ],
-        answer: 'Principal quantum number',
+        question: 'Which of the following is considered a non-current asset from the provided data?',
+        options: ['Accounts receivable', 'Land', 'Cash in hand and at bank', 'Accounts Payable'],
+        answer: 'Land',
     },
     {
-        question: 'Slater\'s rules are used for calculating:',
-        options: [
-            'Electronegativity',
-            'Effective nuclear charge',
-            'Bond energy',
-            'Ionization energy'
-        ],
-        answer: 'Effective nuclear charge',
+        question: 'Calculate the Stock Turnover ratio using the provided data.',
+        options: ['4 times', '3 times', '5 times', '2 times'],
+        answer: '4 times',
     },
     {
-        question: 'What is the hybridization of carbon in CO₂?',
-        options: [
-            'sp',
-            'sp²',
-            'sp³',
-            'dsp²'
-        ],
-        answer: 'sp',
+        question: 'What is the change in Cash in hand and at bank from 31-Dec-18 to 31-Dec-19?',
+        options: ['Increased by 80,000', 'Decreased by 70,000', 'No change', 'Increased by 20,000'],
+        answer: 'Increased by 80,000',
     },
     {
-        question: 'What is the difference in bonding between Na and NaCl?',
-        options: [
-            'Ionic bonding in NaCl and covalent bonding in Na',
-            'Metallic bonding in Na and ionic bonding in NaCl',
-            'Covalent bonding in both',
-            'Metallic bonding in NaCl and ionic bonding in Na'
-        ],
-        answer: 'Metallic bonding in Na and ionic bonding in NaCl',
+        question: 'Which of the following transactions is a debit entry in the ledger?',
+        options: ['Sold goods to Krishna on credit', 'Paid into bank', 'Drew Cash from Bank for Credit', 'Paid Shyam cash'],
+        answer: 'Paid into bank',
     },
     {
-        question: 'Which of the following is an example of lattice energy?',
-        options: [
-            'Energy released during bond formation',
-            'Energy required to convert a gas into a solid',
-            'Energy required to break ionic bonds in a crystal lattice',
-            'Energy absorbed by an electron during excitation'
-        ],
-        answer: 'Energy required to break ionic bonds in a crystal lattice',
+        question: 'From the provided information, what is the amount of General Reserve as of 31-Mar-22?',
+        options: ['3,44,000', '4,14,000', '1,20,000', '5,10,000'],
+        answer: '4,14,000',
     },
     {
-        question: 'The structure of PCl₅ is:',
-        options: [
-            'Tetrahedral',
-            'Trigonal bipyramidal',
-            'Square planar',
-            'Octahedral'
-        ],
-        answer: 'Trigonal bipyramidal',
+        question: 'In the Cost Sheet preparation, what is the total factory overhead cost?',
+        options: ['1,00,000', '1,80,000', '60,000', '2,00,000'],
+        answer: '1,80,000',
     },
     {
-        question: 'What is shielding or screening effect?',
-        options: [
-            'Reduction in nuclear charge experienced by outer electrons',
-            'Increase in nuclear charge experienced by inner electrons',
-            'Interaction between nucleus and valence electrons',
-            'None of the above'
-        ],
-        answer: 'Reduction in nuclear charge experienced by outer electrons',
+        question: 'Which of the following is included in the Administrative Overheads?',
+        options: ['Wages paid to workers', 'Indirect labor', 'Salaries', 'Depreciation of factory equipment'],
+        answer: 'Salaries',
     },
     {
-        question: 'What is the correct relationship between de Broglie wavelength and momentum?',
-        options: [
-            'λ = h / p',
-            'λ = p / h',
-            'λ = h * p',
-            'λ = h² / p²'
-        ],
-        answer: 'λ = h / p',
+        question: 'In the transactions of Mahesh for April, what was the initial capital started with?',
+        options: ['20,000', '14,000', '10,000', '30,000'],
+        answer: '20,000',
     }
-  ];
+];
+
   
     
   
