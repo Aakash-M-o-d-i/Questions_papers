@@ -219,11 +219,13 @@ function showAnswer() {
     let incorrectAnswersHtml = '';
     for (let i = 0; i < incorrectAnswers.length; i++) {
         incorrectAnswersHtml += `
+        <div class="a">
             <p>
-                <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
+                <strong>Question ${i+1}:</strong> ${incorrectAnswers[i].question}<br>
                 <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
                 <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
             </p>
+        </div>
         `;
     }
 

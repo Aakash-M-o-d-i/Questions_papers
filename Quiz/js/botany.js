@@ -170,12 +170,14 @@ const quizData = [
       let incorrectAnswersHtml = '';
       for (let i = 0; i < incorrectAnswers.length; i++) {
           incorrectAnswersHtml += `
-              <p>
-                  <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
-                  <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
-                  <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
-              </p>
-          `;
+        <div class="a">
+            <p>
+                <strong>Question ${i+1}:</strong> ${incorrectAnswers[i].question}<br>
+                <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
+                <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
+            </p>
+        </div>
+        `;
       }
   
       resultContainer.innerHTML = `

@@ -7,7 +7,8 @@ body {
     height: 100vh;
     margin: 0;
 
-    background-image: url('/images/quiz-bg.png');
+    /* background-image: url('/images/quiz-bg.png'); */
+    background-image: url('/images/cho.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -63,5 +64,21 @@ body {
     height: 50px;
 }
 
+@media (max-width: 768px) {
+    .options-container {
+        padding: 10px;
+    }
+    .option {
+        padding: 10px;
+    }
+}
 
+@media (max-width: 480px) {
+    .options-container {
+        padding: 5px;
+    }
+    .option {
+        padding: 5px;
+    }
+}
 /* image */

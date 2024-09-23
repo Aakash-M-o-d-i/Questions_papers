@@ -1,9 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
-    /* background: #121d55; */
     display: flex;
     justify-content: center;
-    background-image: url('/images/bg-quiz.png');
+    background-image: url('/images/bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -11,16 +10,16 @@ body {
 /* For tablets (width between 600px and 1024px) */
 @media (max-width: 1024px) and (min-width: 600px) {
     body {
-        background-size: contain; /* Adjust to fit within the container */
-        background-position: top center; /* Align the image differently if needed */
+        background-size: contain;
+        background-position: top center;
     }
 }
 
 /* For mobile devices (width below 600px) */
 @media (max-width: 599px) {
     body {
-        background-size: contain; /* Make sure the image fits within the screen */
-        background-position: top center; /* Position the image as needed */
+        background-size: contain;
+        background-position: top center;
     }
 }
 
@@ -28,7 +27,7 @@ body {
     width: 850px;
     padding: 20px;
     margin-top: 80px;
-    background-color: #b8b8b849;
+    background-color: #00000049;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     text-align: center;
@@ -44,8 +43,7 @@ h1 {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: xx-large;
-    /* color: #ea6c21; */
-    color: #C8CFA0;
+    color: black;
 }
 
 .option {
@@ -74,6 +72,7 @@ h1 {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
+    color: aliceblue;
 }
 
 .hide {
@@ -89,7 +88,6 @@ h1 {
     margin-bottom: 10px;
     cursor: pointer;
     font-size: larger;
-
 }
 
 .options input {
@@ -129,20 +127,28 @@ button:hover {
     border-color: #d32f2f !important;
 }
 
-
 .services-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+    gap: 10px;
 }
 
 .service {
     background-color: #f9f9f9;
     padding: 20px;
     margin: 10px;
-    width: 300px;
+    width: 900px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
 
+.a {
+    background-color: #cf4c4c;
+    padding: 20px;
+    margin: 10px;
+    width: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
