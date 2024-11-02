@@ -1,200 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Course</title>
+  <link rel="stylesheet" href="/Quiz/css/index.css">
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            /* display: flex; */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
+  <!-- For register -->
 
-        .contact-container {
-            display: flex;
-            flex-direction: column;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 1000px; /* Adjusted max-width for better centering */
-            margin: auto; /* Center the container */
-        }
-
-        .contact-info {
-            margin-bottom: 20px;
-        }
-
-        .contact-info h2 {
-            margin-top: 0;
-        }
-
-        .contact-info a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact-form label {
-            margin: 10px 0 5px;
-        }
-
-        .contact-form input, 
-        .contact-form textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 15px;
-        }
-
-        .contact-form button {
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+    })();
+  </script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="/images/main_logo.png" alt="Question Paper Logo">
-            </div>
-            <h1> Knowledge or Learning</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#courses">Courses</a>
-                <a href="/html/contact.html">Contact Us</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="contact-container">
-        <div class="contact-info">
-            <h2>Let's chat.</h2>
-            <p>If you have any questions or would like to inquire about our services, please contact us at: ✌️</p>
-            <p>Email: <a href="mailto:framesmillion@gmail.com">framesmillion@gmail.com</a></p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: 123 Woodwork Lane, Carpentry City, WP 12345</p>
-            <p>OR</p>
-            <p>Fill this form, so we will reach you!</p>
-        </div>
-        <div class="contact-form">
-            <form action="#" method="post">
-                <label for="full-name">Full name*</label>
-                <input type="text" id="full-name" name="full-name" required>
-                
-                <label for="email">Email address*</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject">
-                
-                <label for="message">Tell us more about your project*</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send message</button>
-            </form>
-        </div>
-    </div>
-    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
-<footer class="relative bg-blueGray-200 pt-8 pb-6">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap text-left lg:text-left">
-      <div class="w-full lg:w-6/12 px-4">
-        <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
-        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
-          Find us on any of these platforms, we respond 1-2 business days.
-        </h5>
-        <div class="mt-6 lg:mb-0 mb-6">
-          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-github"></i>
-          </button>
-        </div>
+<body>
+  <script src="/js/Quiz_contact.js"></script>
+  <div class="options-container">
+    <button class="option" onclick="openRegisterPopup('/Quiz/html/AI/ai.html')">
+      <div class="option-content">
+        <img src="/Quiz/html/AI/ai.html" alt="" srcset="">
+        <img src="/Quiz/A-icons/ai.gif" alt="AI Icon" class="icon">
+        <span>Artificial Intelligence</span>
       </div>
-      <div class="w-full lg:w-6/12 px-4">
-        <div class="flex flex-wrap items-top mb-6">
-          <div class="w-full lg:w-4/12 px-4 ml-auto">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
-            <ul class="list-unstyled">
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-full lg:w-4/12 px-4">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
-            <ul class="list-unstyled">
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    </button>
+
+    <button class="option" onclick="navigateTo('/Quiz/html/chemistry/chem.html')">
+      <div class="option-content">
+        <img src="/Quiz/A-icons/chem1.gif" alt="Chemistry Icon" class="icon">
+        <span>Chemistry</span>
       </div>
-    </div>
-    <hr class="my-6 border-blueGray-300">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
-      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-        <div class="text-sm text-blueGray-500 font-semibold py-1">
-          Copyright © <span id="get-current-year">2021</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
-          <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
-        </div>
+    </button>
+
+    <button class="option" onclick="navigateTo('/Quiz/html/bba/bba-quiz.html')">
+      <div class="option-content">
+        <img src="/Quiz/A-icons/management.gif" alt="Chemistry Icon" class="icon">
+        <span>BBA</span>
       </div>
+    </button>
+
+    <button class="option" onclick="navigateTo('/Quiz/html/botany/botany-quiz.html')">
+      <div class="option-content">
+        <img src="/Quiz/A-icons/botany.gif" alt="Chemistry Icon" class="icon">
+        <span>Botany</span>
+      </div>
+    </button>
+
+    <button class="option" onclick="navigateTo('/Quiz/html/geology/geology.html')">
+      <div class="option-content">
+        <img src="/Quiz/A-icons/geology.gif" alt="Chemistry Icon" class="icon">
+        <span>Geology</span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Popup form / register form-->
+  <div id="popupContainer" class="popup-container hide-popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-btn">×</span>
+      <h2>Register</h2>
+      <form id="contact-form">
+        <label for="name">Full name*</label>
+        <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required>
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option>Select</option>
+          <option value="B.Sc Artificial Intelligence">B.Sc Artificial Intelligence</option>
+          <!-- Add other departments as needed -->
+        </select>
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester" required>
+          <option>Select</option>
+          <option value="1">1</option>
+          <!-- Add more semesters as needed -->
+        </select>
+        <label for="email">Email address*</label>
+        <input id="email" type="email" name="email" placeholder="example@gmail.com" required>
+        <label for="phone">Phone Number (India):</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91xxxxxxxxxx" required>
+        <button type="submit">Send message</button>
+      </form>
     </div>
   </div>
-</footer>
+
+  <script src="/js/Quiz_contact.js"></script>
 </body>
+
 </html>

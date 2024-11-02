@@ -405,7 +405,7 @@ footer {
   text-align: center;
 }
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 5em;
   margin: 0;
 }
 .hero-text p {
@@ -528,7 +528,6 @@ footer {
 
 
   /* register page */
-  
   
  .popup-container {
     display: none; /* Hidden by default */
@@ -669,6 +668,8 @@ footer {
   display: none; /* Initially hidden */
   border-radius: 70px;
 }
+
+
 
 #progress {
   height: 100%;
