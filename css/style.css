@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('/images/indexPage.png');
 }
 
 header {
@@ -21,15 +22,23 @@ header {
 
 }
 
+/* nav bar adjust in mobile also */
+.logoCtuap img {
+  max-height: 60px;
+}
+
+.logoCtuap img {
+  height: 50px; /* Adjust height as needed */
+}
+
 .logo img {
     max-height: 60px;
 }
-
-/* nav bar adjust in mobile also */
-
 .logo img {
   height: 50px; /* Adjust height as needed */
 }
+
+
 header h1 {
   margin: 10px 0;
   text-align: center;
@@ -53,7 +62,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 5 10px;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -140,7 +149,7 @@ footer {
 
 
 .courses-section {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 50px 0;
 
     
@@ -487,7 +496,7 @@ footer {
 .footer-bottom {
   text-align: center;
   padding: 10px;
-  background-color: #e2e8f0;
+  /* background-color: #e2e8f0; */
 }
 
 .footer-bottom p {
@@ -495,7 +504,7 @@ footer {
 }
 
 .footer-bottom img{
-  max-height: 35px;
+  max-height: 69px;
   margin-bottom: 20px;
 }
 

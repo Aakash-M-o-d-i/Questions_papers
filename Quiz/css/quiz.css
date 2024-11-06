@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    background-image: url('/images/bg.jpg');
+    background-image: url('/images/question-bg.png');
     background-size: cover;
     background-position: center;
 }

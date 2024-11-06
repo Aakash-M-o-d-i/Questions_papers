@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- For register -->
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         (function () {
-            emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+            emailjs.init("BNYpoMDq7pN6y1BJu"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
         })();
     </script>
 
@@ -21,18 +21,29 @@
 
 <body>
     <header>
+
         <div class="container">
+            <div class="footer-bottom">
+                <a href="index.html"><img src="/images/main_logo.png" alt=""></i></a>
+                <a href="index.html"><img src="/images/ctuap.png" alt=""></i></a>
+            </div>
+            <!-- <div class="logoCtuap">
+                <a href="index.html"><i class="fab fa-github"><img src="/images/ctuap.png"
+                            alt="Question Paper Logo"></i></a>
+            </div>
             <div class="logo">
                 <a href="index.html"><i class="fab fa-github"><img src="/images/main_logo.png"
                             alt="Question Paper Logo"></i></a>
-            </div>
-            <h1> Knowledge or Learning</h1>
+            </div> -->
+
+            
+            <h1> Knowledge Hub</h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#courses">Courses</a>
-                <a href="/Quiz/html/QuizIndex.html">Quiz</a>
+                <a href="/Quiz/html/QuizIndex.html">Mock Test</a>
                 <a href="/html/contact.html">Contact Us</a>
 
             </nav>
@@ -41,9 +52,9 @@
 
     <div class="hero">
         <h1></h1>
-        <img src="/images/4index_image.png" alt="Question Paper" class="responsive">
+        <img src="/images/4index_image.jpg" alt="Question Paper" class="responsive">
         <div class="hero-text">
-            <h1 style="color: rgb(255, 227, 0); font-weight: 1000;">Question Paper <br>PYQs</h1>
+            <h1 style="color: rgb(8, 0, 255); font-weight: 1000; font-family: League spartan">Question Paper <br>PYQs</h1>
         
         </div>
     </div>
@@ -107,27 +118,13 @@
     </section>
 
 
-    <!-- <section id="about" class="courses-section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p class="description">Welcome to Knowledge or Learning, your go-to resource for previous years' question papers (PYQs) across a variety of academic disciplines. We specialize in providing comprehensive collections of both mid-term and semester exam question papers to help students excel in their studies.
-            <br><br>
-            Our website caters to a broad range of B.Sc and M.Sc courses, ensuring that students have access to valuable study materials tailored to their specific needs. Whether you're pursuing a degree in B.Sc Artificial Intelligence, B.Sc Chemistry, B.Sc Botany, B.Sc Geology, or BBA, we have you covered. Additionally, we offer PYQs for M.Sc courses, making us a one-stop solution for both undergraduate and postgraduate students.
-            <br><br>
-            Our mission is to empower students by providing them with the tools they need to succeed academically. By offering a wide array of question papers from previous years, we help students gain a better understanding of exam patterns, important topics, and the types of questions that frequently appear in exams.
-            <br><br>
-            At Knowledge or Learning, we are committed to supporting your educational journey and helping you achieve your academic goals. Explore our extensive collection of PYQs today and take the first step towards academic excellence!
-            </p>
-        </div>
-    </section> -->
-
     <section id="about" class="services-section">
         <div class="container">
             <div class="services-grid">
                 <div class="service2">
                     <img src="/images/artificial-intelligence.png" alt="B.Sc Artificial Intelligence">
                     <h2>About Us</h2>
-                    <p>Welcome to Knowledge or Learning, your go-to resource for previous years' question papers (PYQs)
+                    <p>Welcome to Knowledge Hub, your go-to resource for previous years' question papers (PYQs)
                         across a variety of academic disciplines. We specialize in providing comprehensive collections
                         of both mid-term and semester exam question papers to help students excel in their studies.
                         <br><br>
@@ -142,7 +139,7 @@
                         gain a better understanding of exam patterns, important topics, and the types of questions that
                         frequently appear in exams.
                         <br><br>
-                        At Knowledge or Learning, we are committed to supporting your educational journey and helping
+                        At Knowledge Hub, we are committed to supporting your educational journey and helping
                         you achieve your academic goals. Explore our extensive collection of PYQs today and take the
                         first step towards academic excellence!
                     </p>
@@ -922,14 +919,12 @@
                 <!-- Department Selection -->
                 <label for="department">Department:</label>
                 <select id="department" name="department" required>
-                    <option value="B.Sc Artificial Intelligence">Select</option>                   
-                    <option value="">B.Sc Artificial Intelligence</option>
+                    <option>Select</option>              
+                    <option value="B.Sc Artificial Intelligence">B.Sc Artificial Intelligence</option>     
                     <option value="B.Sc Chemistry">B.Sc Chemistry</option>
                     <option value="B.Sc Botany">B.Sc Botany</option>
                     <option value="B.Sc Botany">B.Sc Geology</option>
                     <option value="B.Sc Botany">BBA</option>
-                    <!-- <option value="M.Sc">M.Sc</option> -->
-                    <!-- Add more departments as needed -->
                 </select>
 
                 <!-- Semester Selection -->
@@ -942,8 +937,12 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+
                     <!-- Add more semesters as needed -->
-                </select <label for="email">Email address*</label>
+                </select
+                <label for="email">Email address*</label>
                 <input id="email" type="email" name="email" placeholder="example@gmail.com" required>
 
                 <!-- Phone Number Input -->
@@ -987,7 +986,7 @@
                     <li><a href="#about">About Us</a></li>
                     <!-- <li><a href="#">Blog</a></li> -->
                     <li><a href="https://github.com/Aakash-M-o-d-i" target="_blank">Github</a></li>
-                    <li><a href="/Quiz/html/QuizIndex.html">Quiz</a></li>
+                    <li><a href="/Quiz/html/QuizIndex.html">Mock Test</a></li>
 
                 </ul>
             </div>
@@ -1002,7 +1001,8 @@
         </div>
         <div class="footer-bottom">
             <a href="index.html"><i class="fab fa-github"><img src="/images/main_logo.png" alt=""></i></a>
-            <p>Copyright © 2023 Knowledge OR Learning <br></p> by Creative <p style="font-weight: bold;">Aakash Modi.
+            <a href="index.html"><i class="fab fa-github"><img src="/images/ctuap.png" alt=""></i></a>
+            <p>Copyright © 2023 Knowledge Hub <br></p> by Creative <p style="font-weight: bold;">Aakash Modi.
             </p>
         </div>
     </footer>

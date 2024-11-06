@@ -12,9 +12,10 @@ We offer a comprehensive collection of previous years' question papers for the f
 - **B.Sc Chemistry**
 - **B.Sc Botany**
 - **BBA (Bachelor of Business Administration)**
+- **B.Sc Geology**
 
-### M.Sc Courses
-- **(List the specific M.Sc courses you offer)**
+<!-- ### M.Sc Courses
+- **(List the specific M.Sc courses you offer)** -->
 
 ## How to Use This Repository
 

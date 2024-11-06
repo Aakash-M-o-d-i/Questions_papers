@@ -8,7 +8,7 @@ body {
     margin: 0;
 
     /* background-image: url('/images/quiz-bg.png'); */
-    background-image: url('/images/cho.jpg');
+    background-image: url('/images/quizBg.png');
     background-size: cover;
     background-position: center;
 }
