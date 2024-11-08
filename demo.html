@@ -1,92 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choose Your Course</title>
-  <link rel="stylesheet" href="/Quiz/css/index.css">
-
-  <!-- For register -->
-
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("AtpuF_VALfbZkJTbk"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
-    })();
-  </script>
+  <title>Running Text</title>
+  <link rel="stylesheet" href="/css/demo.css">
 </head>
-
 <body>
-  <script src="/js/Quiz_contact.js"></script>
-  <div class="options-container">
-    <button class="option" onclick="openRegisterPopup('/Quiz/html/AI/ai.html')">
-      <div class="option-content">
-        <img src="/Quiz/html/AI/ai.html" alt="" srcset="">
-        <img src="/Quiz/A-icons/ai.gif" alt="AI Icon" class="icon">
-        <span>Artificial Intelligence</span>
-      </div>
-    </button>
 
-    <button class="option" onclick="navigateTo('/Quiz/html/chemistry/chem.html')">
-      <div class="option-content">
-        <img src="/Quiz/A-icons/chem1.gif" alt="Chemistry Icon" class="icon">
-        <span>Chemistry</span>
-      </div>
-    </button>
-
-    <button class="option" onclick="navigateTo('/Quiz/html/bba/bba-quiz.html')">
-      <div class="option-content">
-        <img src="/Quiz/A-icons/management.gif" alt="Chemistry Icon" class="icon">
-        <span>BBA</span>
-      </div>
-    </button>
-
-    <button class="option" onclick="navigateTo('/Quiz/html/botany/botany-quiz.html')">
-      <div class="option-content">
-        <img src="/Quiz/A-icons/botany.gif" alt="Chemistry Icon" class="icon">
-        <span>Botany</span>
-      </div>
-    </button>
-
-    <button class="option" onclick="navigateTo('/Quiz/html/geology/geology.html')">
-      <div class="option-content">
-        <img src="/Quiz/A-icons/geology.gif" alt="Chemistry Icon" class="icon">
-        <span>Geology</span>
-      </div>
-    </button>
+<div class="marquee-container">
+  <div class="marquee-text" id="marquee">
+    Welcome to our website! Enjoy our latest updates and stay tuned for more!
   </div>
+</div>
 
-  <!-- Popup form / register form-->
-  <div id="popupContainer" class="popup-container hide-popup">
-    <div class="popup-content">
-      <span class="close-btn" id="close-btn">×</span>
-      <h2>Register</h2>
-      <form id="contact-form">
-        <label for="name">Full name*</label>
-        <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required>
-        <label for="department">Department:</label>
-        <select id="department" name="department" required>
-          <option>Select</option>
-          <option value="B.Sc Artificial Intelligence">B.Sc Artificial Intelligence</option>
-          <!-- Add other departments as needed -->
-        </select>
-        <label for="semester">Semester:</label>
-        <select id="semester" name="semester" required>
-          <option>Select</option>
-          <option value="1">1</option>
-          <!-- Add more semesters as needed -->
-        </select>
-        <label for="email">Email address*</label>
-        <input id="email" type="email" name="email" placeholder="example@gmail.com" required>
-        <label for="phone">Phone Number (India):</label>
-        <input type="tel" id="phone" name="phone" placeholder="+91xxxxxxxxxx" required>
-        <button type="submit">Send message</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="/js/Quiz_contact.js"></script>
+<script src="/js/demo.js"></script>
 </body>
-
 </html>
