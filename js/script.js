@@ -66,7 +66,7 @@ contactForm.addEventListener('submit', function(event) {
         }
     }, 100); // Adjust interval timing as needed
 
-    emailjs.send('service_z1ymozs', 'template_p9b6xuy', templateParams)
+    emailjs.send('service_btra9cg', 'template_xu2o1gs', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Message sent successfully!');
