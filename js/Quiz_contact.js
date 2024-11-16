@@ -67,7 +67,7 @@ contactForm.addEventListener('submit', async (event) => {
 
     // Send email with emailjs
     try {
-        const response = await emailjs.send('service_w493es7', 'template_cqtb55k', templateParams);
+        const response = await emailjs.send('service_ilwj6po', 'template_8gilg47', templateParams);
         console.log('SUCCESS!', response.status, response.text);
         alert('Message sent successfully!');
         contactForm.reset();
