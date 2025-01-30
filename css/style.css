@@ -406,6 +406,11 @@ footer {
   height: auto;
   filter: brightness(0.7);
 }
+
+.hero .footer-bottom1 img{
+  max-height: 69px;
+  margin-bottom: 20px;
+}
 .hero-text {
   position: absolute;
   top: 50%;
